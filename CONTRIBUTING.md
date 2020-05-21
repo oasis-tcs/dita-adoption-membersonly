@@ -21,3 +21,5 @@ rules, the repository content may be re-used freely, including the creation and 
 
 Please see [README](https://github.com/oasis-tcs/dita-adoption-membersonly/blob/master/README.md) for general description of 
 this repository, and the [LICENSE](https://github.com/oasis-tcs/dita-adoption-membersonly/blob/master/LICENSE.md) for licensing.
+
+Confirming write access.
