@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="library-references-for-sections">
+    <title>Library references for sections</title>
+    <body>
+        <p>The following markup places the badge in the first sentence of the
+                <codeph>&lt;section&gt;</codeph>.</p>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;section&gt;
+  &lt;title&gt;Section title&lt;/title&gt;
+  &lt;p&gt;Section-level badge reference&lt;/p&gt;
+  &lt;p&gt;Running text&lt;/p&gt;
+&lt;/section&gt;</codeblock>
+        <p>In this case, consistency is the important thing.</p>
+    </body>
+</topic>

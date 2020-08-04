@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Content Badging in OASIS DITA</title>
+    <topicref href="badges_intro.dita">
+        <topicref href="badges_typical-use--case.dita"/>
+        <topicref href="badges_establishing-logic.dita">
+            <topicref href="badges_global-statements.dita"/>
+            <topicref href="badges_scope.dita"/>
+        </topicref>
+        <topicref href="badges_badge-design-and-implementation.dita"/>
+        <topicref href="badges_implementation.dita">
+            <topicref href="badges_implementation_flagging.dita"/>
+            <topicref href="badges_implementation_library-refs.dita"/>
+        </topicref>
+        <topicref href="badges_test-drive.dita"/>
+        <topicref href="badges_placement.dita">
+            <topicref href="badges_placement_flagging.dita"/>
+            <topicref href="badges_placement_library-refs.dita"/>
+            <topicref href="badges_placement_library-refs_sections.dita"/>
+            <topicref href="badges_referencing-basic.dita"/>
+            <topicref href="badges_referencing-shared.dita"/>
+        </topicref>
+        <topicref href="badges_conclusion.dita"/>
+    </topicref>
+</map>

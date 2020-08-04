@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita-library-references">
+    <title>DITA library references</title>
+    <body>
+        <p>DITA flagging is preferable, but not possible in all circumstances:</p>
+        <ul>
+            <li><p>Your legacy CCMS does not support flagging.</p></li>
+            <li><p>The transforms that you use are buggy or do not support flagging.</p></li>
+            <li><p>You do not have control over your DITAVAL files or publishing pipeline.</p></li>
+            <li><p>Some of your sources are in non-XML formats such as Markdown or HTML5.</p></li>
+        </ul>
+        <p>The brute-force method of building libraries of content badges and then referencing them
+            from your DITA topics is an option.</p>
+        <p>Start by building a library of reusable DITA badges, call it
+                <codeph>library_content-badges.dita</codeph>.</p>
+        <p>Here is some markup for a positive badge . . .</p>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;p id="p_badge_icon_cloud-connect_section_yes"&gt;
+    &lt;image href="images/badge_cloud-connect_small_yes.png"&gt;  
+      &lt;alt&gt;This section applies exclusively to Cloud Connect.&lt;/alt&gt;
+    &lt;/image&gt;
+    &lt;ph&gt; This section applies exclusively to Cloud Connect.&lt;/ph&gt;
+&lt;/p&gt;</codeblock>
+        <p>. . . and generates</p>
+        <image href="./images/render1.png" placement="break">
+            <alt>Icon rendered</alt>
+        </image>
+        <p>The following markup defines a negative badge . . .</p>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;p id="p_badge_tag_cloud-compute_topic_no"&gt;
+  &lt;image href="images/tag_cloud-compute_not-supported.svg"&gt;
+    &lt;alt&gt;This topic does not apply to Cloud Compute.&lt;/alt&gt;
+  &lt;/image&gt;
+  &lt;ph&gt; This topic does not apply to Cloud Compute.&lt;/ph&gt;
+&lt;/p&gt;</codeblock>
+        <p>. . . and generates</p>
+        <image href="./images/render2.png" placement="break">
+            <alt>Icon rendered</alt>
+        </image>
+        <p>Time that you spend organizing these badge definitions in a DITA library topic has a big
+            payoff for content developers on your team. If writers can easily find the appropriate
+            badge, they'll thank you -- eventually.</p>
+        <image href="./images/library1.png" placement="break">
+            <alt>Badge library entries</alt>
+        </image>
+        <image href="./images/library2.png" placement="break">
+            <alt>Badge library entries</alt>
+        </image>
+    </body>
+</topic>

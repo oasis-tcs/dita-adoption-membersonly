@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="content-badging-in-oasis-dita-second-review">
+    <title>Content Badging in OASIS DITA (SECOND REVIEW)</title>
+    <body>
+        <p>This repo contains draft content for an OASIS DITA Adoption whitepaper on content
+            badging.</p>
+        <p>You can clone or download all the sample badges and the supporting DITA examples at:</p>
+        <p><codeph>https://github.com/StanDoherty/dita-badges</codeph>.</p>
+        <p>The DITA map referencing stand-alone Markdown topics is
+                <codeph>whitepaper_dita-badges.ditamap</codeph>. A PDF generated from those hybrid
+            DITA/Markdown sources is available at:</p>
+        <image href="pdf/whitepaper_dita-badges.pdf" placement="break">
+            <alt>DITA Badging PDF</alt>
+        </image>
+        <p>Badging in general is a popular topic. The three most popular forms of badging are:</p>
+        <ul>
+            <li><p><i>Achievement badging</i>: Organizations set up collections of social media
+                    "badges" to recognize the involvement and achievement of employees, partners,
+                    and customers. Imagine if someone developed a technical certification program
+                    for DITA and awarded badges to program participants who have passed tests for
+                    particular DITA features.</p><p><image
+                        href="./images/badge_dita_conref-push.png">
+                        <alt>DITA conref push expert</alt>
+                    </image>
+                    <image href="./images/badge_dita_reltables.png">
+                        <alt>DITA reltables expert</alt>
+                    </image>
+                    <image href="./images/badge_dita_scopedkeys.png">
+                        <alt>DITA scoped keys expert</alt>
+                    </image></p></li>
+            <li><p><i>Status badging</i>: Collaborative development platforms such as GitHub allow
+                    administrators to add macros to portal pages that display the current status of
+                    builds, workflow stages, contributions, and test coverage.</p><image
+                    href="./images/badge_tests_pass-fail.svg" placement="break">
+                    <alt>Test status</alt>
+                </image><image href="./images/badge_build_passing.svg" placement="break">
+                    <alt>Build status passing</alt>
+                </image><image href="./images/badge_build_unknown.svg" placement="break">
+                    <alt>Build status unknown</alt>
+                </image><image href="./images/badge_build_failing.svg" placement="break">
+                    <alt>Build status failing</alt>
+                </image><image href="./images/badge_build_failure.svg" placement="break">
+                    <alt>Build status failure</alt>
+                </image></li>
+            <li><p><i>Content badging</i>: Content development organizations often decide to have
+                    one publication document multiple, closely-related products. Content badges
+                    alert readers whether the relevance of a particular topic, section, or element
+                    is restricted to a specific product or release version. Here are some samples of
+                    icon-based and tag-based badges.</p><p><image
+                        href="./images/badge_cloud-compute_no.png">
+                        <alt>Topic not applicable to Cloud Compute</alt>
+                    </image> This topic does not apply to Cloud Compute.</p><p><image
+                        href="./images/badge_cloud-compute_yes.png">
+                        <alt>Topic applicable only to Cloud Compute</alt>
+                    </image> This topic applies exclusively to Cloud Compute.</p><p><image
+                        href="./images/tag_cloud-compute_not-supported.svg">
+                        <alt>Not applicable to Cloud Compute</alt>
+                    </image> This section does not apply to Cloud Compute.</p><p><image
+                        href="./images/tag_cloud-compute_supported.svg">
+                        <alt>Applicable only to Cloud Compute</alt>
+                    </image> This topic applies exclusively to Cloud Compute.</p></li>
+        </ul>
+        <p>Content badging allows writing teams to "tag" content as applicable or inapplicable to a
+            specific technology, product, release level, or audience.</p>
+    </body>
+</topic>

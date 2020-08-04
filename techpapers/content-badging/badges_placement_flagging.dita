@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="attribute-tagging-for-dita-flagging">
+    <title>Attribute tagging for DITA flagging</title>
+    <body>
+        <p>If you are using DITA flagging to implement badging, you need to place the flagging
+            attribute value in the first content-bearing element of the "badged" content.</p>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;body&gt;
+  &lt;p product="cloud-net-yes-body"&gt;First paragraph.&lt;/p&gt;
+  &lt;p&gt;Running text&lt;/p&gt;
+&lt;/body&gt;</codeblock>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;section&gt;
+  &lt;title&gt;Security considerations&lt;/title&gt;
+  &lt;p product="cloud-net-yes-section"&gt;Running text&lt;/p&gt;
+&lt;/sections&gt;</codeblock>
+        <p>Tagging non-content-bearing elements such as or  will not generate flagged (badged)
+            output.</p>
+    </body>
+</topic>

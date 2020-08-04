@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="conref-and-keyref-references-to-badge-libraries">
+    <title>Conref and keyref references to badge libraries</title>
+    <body>
+        <p>If you have built a library for your badges and assigned each of them a unique ID, you
+            can use @conref or @conkeyref to insert them by reference them into your current
+            topic.</p>
+        <p>Let's assume that you have created a badging library named
+                <codeph>library_content-badges.dita</codeph> with a topic @id of
+                <codeph>library1</codeph>. That library contains the following badge definition.</p>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;p id="p_badge_tag_cloud-compute_topic_yes"&gt;
+  &lt;image href="images/tag_cloud-compute_supported.svg"&gt;
+    &lt;alt&gt;This topic applies exclusively to Cloud Compute.&lt;/alt&gt;
+  &lt;/image&gt;
+  &lt;ph&gt; This topic applies exclusively to Cloud Compute.&lt;/ph&gt;
+&lt;/p&gt;</codeblock>
+        <p>To insert this badge using @conref (URL referencing), you would enter the following
+            markup.</p>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;p conref="library_content-badges.dita#library1/p_badge_tag_cloud-connect_topic_yes"/&gt;</codeblock>
+        <p>To insert this badge using DITA keys, you must first define a key for the badging library
+            in your current map.</p>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;topicref keys="badgelib" href="library_content-badges.dita"/&gt;</codeblock>
+        <p>You can then reference the badge using @conkeyref (indirect referencing).</p>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;p conkeyref="badgelib/p_badge_tag_cloud-connect_topic_yes"/&gt;</codeblock>
+        <p>The @conref and @conkeyref mechanisms reference the same badge definition in the same
+            badge library file. Using indirect, key-based references is a wise investment because it
+            will provide you with flexibility in managing multiple badge library files down the
+            road. Change the key definition once, all @conkeyref references inherit the new badge
+            definition automatically.</p>
+    </body>
+</topic>

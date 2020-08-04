@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="badge-implementation-options">
+    <title>Badge implementation options</title>
+    <body>
+        <p>Once you have identified your design components. There are two general approaches for
+            implementing badges, DITA flagging and DITA library references. They are not, by the
+            way, mutually exclusive.</p>
+    </body>
+</topic>

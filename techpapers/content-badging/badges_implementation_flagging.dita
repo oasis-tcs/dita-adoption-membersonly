@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="dita-flagging">
+    <title>DITA flagging</title>
+    <body>
+        <p>If you can "badge" content variations with <i>either</i> an icon <i>or</i> a text string,
+            DITA flagging is the recommended approach. Define these flagging badges in your DITAVAL
+            files.</p>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;val&gt;
+  &lt;!-- The following two badges insert an icon at the beginning of the flagged content --&gt;
+  &lt;!-- with the alt-text string appearing as hover or alt-reader text. --&gt;    
+  &lt;prop att="product" action="flag" val="cloud-compute-yes-section"&gt;
+      &lt;startflag imageref="images/badge_cloud-compute-yes-section.png"&gt;
+        &lt;alt-text&gt;This section applies to the CloudSquared Cloud Compute product.&lt;/alt-text&gt;
+      &lt;/startflag&gt;
+  &lt;/prop&gt;
+  &lt;prop att="product" action="flag" val="cloud-compute-no-section"&gt;
+      &lt;startflag imageref="images/badge_cloud-compute-no-section.png"&gt;
+        &lt;alt-text&gt;This section does not apply to the CloudSquared Cloud Compute product.&lt;/alt-text&gt;
+      &lt;/startflag&gt;
+  &lt;/prop&gt;
+
+  &lt;!-- The next two badges insert the alt-text string at the beginning of the flagged content. --&gt;
+  &lt;prop att="product" action="flag" val="cloud-net-yes-section"&gt;
+      &lt;startflag&gt;
+        &lt;alt-text&gt;[Cloud Net supported] &lt;/alt-text&gt;
+      &lt;/startflag&gt;
+  &lt;/prop&gt;
+  &lt;prop att="product" action="flag" val="cloud-net-no-section"&gt;
+      &lt;startflag&gt;
+        &lt;alt-text&gt;[Cloud Net not supported] &lt;/alt-text&gt;
+      &lt;/startflag&gt;
+  &lt;/prop&gt;
+&lt;/val&gt;
+</codeblock>
+        <p>DITA flagging has the additional benefit of supporting multiple values for flagging
+            attributes. In the following example, the <p> element is badged for both
+                cloud-compute-yes-section and
+                cloud-net-yes-section.</p><codeblock xml:space="preserve" outputclass="xml">&lt;p product="cloud-compute-yes-section cloud-net-yes-section"&gt;
+Contact Customer Support for Patch-2019-2335.
+&lt;/p&gt;</codeblock><p>DITA
+                processors <i>should</i> generate two instances of the badge icon or badge text at
+                the beginning of the targeted element. This technique may be the only way with DITA
+                flagging to generate <i>both</i> an icon and a text message.</p></p>
+    </body>
+</topic>

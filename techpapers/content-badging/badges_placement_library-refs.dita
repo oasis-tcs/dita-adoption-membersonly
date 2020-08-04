@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="library-references-for-topics">
+    <title>Library references for topics</title>
+    <body>
+        <p>The same principle applies to inserting references to badging libraries.</p>
+        <p>The following markup places the badge in the first sentence of the body of the topic.</p>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;topic id="test1"&gt;
+  &lt;title&gt;Topic title&lt;/title&gt;
+  &lt;shortdesc&gt;Short description&lt;/shortdesc&gt;
+  &lt;body&gt;
+   &lt;p conref="library_content-badges.dita#badge-lib/p_badge_tag_cloud-compute_topic_no"/&gt;
+   &lt;p&gt;Running text.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/topic&gt;</codeblock>
+        <p>The following markup places the same badge inside the <codeph>&lt;abstract&gt;</codeph>
+            element at the beginning of the topic.</p>
+        <codeblock xml:space="preserve" outputclass="xml">&lt;topic id="test2"&gt;
+  &lt;title&gt;Topic title&lt;/title&gt;
+  &lt;abstract&gt;
+    &lt;shortdesc&gt;Short description&lt;/shortdesc&gt;
+    &lt;p conref="library_content-badges.dita#badge-lib/p_badge_tag_cloud-compute_topic_no"/&gt;
+  &lt;/abstract&gt;
+  &lt;body&gt;
+    &lt;p&gt;Running text&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/topic&gt;</codeblock>
+    </body>
+</topic>
