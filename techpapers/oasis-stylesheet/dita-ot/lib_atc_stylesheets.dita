@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_zns_khr_hkb">
+    <title>Library</title>
+    <body>
+        <section id="section_brz_mhr_hkb">
+            <title><xmlelement>shortdesc</xmlelement> phrases</title>
+            <p>Prerequisites: <ph id="ph_shortdesc_prerequisites">Documents system software and
+                    configuration prerequisites.</ph></p>
+        </section>
+        <p>Installation: <ph id="ph_shortdesc_installation">Describes how to download, integrate,
+                and test the <ph keyref="stylesheet-collection-name"/> with <ph
+                    keyref="stylesheet-dita-ot-version"/>. </ph></p>
+        <p>Best practices: <ph id="ph_shortdesc_best-practices">Describes optimal ways to structure
+                DITA Adoption whitepapers for publication using the <ph
+                    keyref="stylesheet-collection-name"/>. </ph></p>
+        <p>Samples: <ph id="ph_shortdesc_samples">Provides an overview of sample documents optimized
+                for publication using the <ph keyref="stylesheet-collection-name"/>.</ph></p>
+    </body>
+</topic>

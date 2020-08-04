@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Publishing OASIS DITA Adoption white papers using the OASIS DITA TC DITA-OT stylesheets </title>
+    <keydef keys="stylesheet-collection-name">
+      <topicmeta>
+        <keywords>
+            <keyword>OASIS DITA TC DITA-OT stylesheets</keyword>
+        </keywords>
+      </topicmeta>  
+    </keydef>
+    <keydef keys="stylesheet-collection-url">
+        <topicmeta>
+            <keywords>
+                <keyword>https://github.com/oasis-open/dita-stylesheets</keyword>
+            </keywords>
+        </topicmeta>  
+    </keydef>
+    <keydef keys="stylesheet-dita-ot-version">
+        <topicmeta>
+            <keywords>
+                <keyword>DITA-OT 3.3.4</keyword>
+            </keywords>
+        </topicmeta>  
+    </keydef>
+    <keydef keys="review-status">
+        <topicmeta>
+            <keywords>
+                <keyword>[DRAFT] </keyword>
+            </keywords>
+        </topicmeta>  
+    </keydef>
+    <keydef keys="current-date">
+        <topicmeta>
+            <keywords>
+                <keyword>January 7, 2020</keyword>
+            </keywords>
+        </topicmeta>  
+    </keydef>
+    
+    
+    
+    
+    
+    <topicref href="atc_intro.dita">
+        <topicref href="atc_prerequisites.dita"/>
+        <topicref href="atc_install-tc-stylesheets.dita"/>
+        <topicref href="atc_best-practices-tc-stylesheets.dita"/>
+        <topicref href="atc_samples.dita"/>
+    </topicref>
+</map>

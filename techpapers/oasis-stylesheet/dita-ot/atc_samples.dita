@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_tx2_s3r_hkb">
+    <title>Sample sources</title>
+    <shortdesc><ph conref="lib_atc_stylesheets.dita#topic_zns_khr_hkb/ph_shortdesc_samples"
+        /></shortdesc>
+    <refbody>
+        <section id="section_tst_pqr_hkb">
+            <title><ph keyref="stylesheet-collection-name"/> templates</title>
+            <p>See the sample specification and committee note templates installed with the <ph
+                    keyref="stylesheet-collection-name"/>. </p>
+            <ul id="ul_pzl_vqr_hkb">
+                <li>
+                    <p><i>Committee note template</i>:
+                            <i><filepath>dita-ot_dir</filepath></i><filepath>/plugins/org.oasis-open.pdf/template/committee-note.ditamap</filepath></p>
+                    <p>Review the <xmlelement>booktitle</xmlelement>,
+                            <xmlelement>bookmeta</xmlelement>, and
+                            <xmlelement>bookrights</xmlelement> metadata in the
+                            <filepath>committee-note.ditamap</filepath> bookmap.</p>
+                </li>
+                <li>
+                    <p><i>Specification template</i>:
+                            <i><filepath>dita-ot_dir</filepath></i><filepath>/plugins/org.oasis-open.pdf/template/spec.ditamap</filepath></p>
+                    <p>Review the <xmlelement>booktitle</xmlelement>,
+                            <xmlelement>bookmeta</xmlelement>, and
+                            <xmlelement>bookrights</xmlelement> metadata in the
+                            <filepath>committee-note.ditamap</filepath> bookmap.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="section_f2h_dsr_hkb">
+            <title>Adoption white paper template(s)</title>
+            <p>TBD</p>
+        </section>
+    </refbody>
+</reference>

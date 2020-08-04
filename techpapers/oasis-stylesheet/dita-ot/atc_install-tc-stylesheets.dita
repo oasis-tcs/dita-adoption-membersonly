@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ttg_4jl_fkb">
+    <title>How to install the OASIS DITA TC stylesheets for DITA-OT</title>
+    <shortdesc><ph conref="lib_atc_stylesheets.dita#topic_zns_khr_hkb/ph_shortdesc_installation"/>
+    </shortdesc>
+    <taskbody>
+        <context/>
+        <steps>
+            <step>
+                <cmd>Download or clone the latest version of the <ph
+                        keyref="stylesheet-collection-name"/> from <xref
+                        href="https://github.com/oasis-open/dita-stylesheets" format="html"
+                        scope="external">OASIS TC Open Repository: dita-stylesheets</xref>
+                    (https://github.com/oasis-open/dita-stylesheets).</cmd>
+            </step>
+            <step>
+                <cmd>(If necessary) unzip the download archive to a local folder, for example
+                        <filepath>c:\temp\dita-stylesheets-master</filepath> on Windows.</cmd>
+            </step>
+            <step>
+                <cmd>Copy all the folders and files <i>inside</i> that unzipped folder to the
+                        <filepath>plugins</filepath> folder in your local installation of the
+                    DITA-OT.</cmd>
+                <stepxmp>
+                    <p>If your local unzipped folder were
+                            <filepath>c:\temp\dita-stylesheets-master</filepath> and your local
+                        DITA-OT folder were <filepath>c:\dita-ot-3.4</filepath>, you would copy the
+                        following folders and files from
+                            <filepath>c:\temp\dita-stylesheets-master</filepath> to
+                            <filepath>c:\dita-ot-3.4\plugins</filepath>. </p>
+                    <codeblock>CONTRIBUTING.md
+LICENSE
+OASIS-style-specifications
+org.oasis-open.pdf
+org.oasis.committeeNote.xhtml
+org.oasis.spec.htmlhelp
+org.oasis.spec.pdf
+org.oasis.spec.preprocnumbering
+org.oasis.spec.xhtml
+org.oasis.specification.pubmeta
+README.md</codeblock>
+                </stepxmp>
+            </step>
+            <step>
+                <cmd>Open a shell or command window.</cmd>
+            </step>
+            <step>
+                <cmd>Change working directory to the root of your local DITA-OT installation, for
+                    example <codeph>cd c:\dita-ot-3.4</codeph> for Windows 10. </cmd>
+            </step>
+            <step>
+                <cmd>Enter the following command to integrate the OASIS DITA stylesheets with the
+                    existing DITA-OT transformation types.</cmd>
+                <info>
+                    <codeblock>.\bin\dita --install</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Enter the following command to verify that the OASIS DITA stylesheets are now
+                    available to you as transformation types in the DITA-OT.</cmd>
+                <info>
+                    <codeblock>.\bin\dita --transtypes</codeblock>
+                </info>
+                <stepresult>
+                    <p>DITA-OT generates a list of available transtypes. That list should include
+                        the following boldfaced OASIS stylesheets. </p>
+                    <codeblock>xhtml
+eclipsehelp
+html5
+htmlhelp
+dita
+pdf
+pdf2
+markdown
+markdown_github
+markdown_gitbook
+<b>oasis-pdf-committeeNote
+oasis-pdf-specification
+oasis-pdf-generic
+oasis-xhtml-committeeNote
+spec-htmlhelp
+spec-pdf
+spec-xhtml</b></codeblock>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Enter the following commands (Windows) to generate a sample PDF for each of the
+                    OASIS PDF transformation types.</cmd>
+                <choicetable id="choicetable_uqj_2rl_fkb" relcolwidth="3.0* 11.29*">
+                    <chrow>
+                        <choption>
+                            <p>If you have a version of Antenna House PDF Formatter installed</p>
+                        </choption>
+                        <chdesc>
+                            <p>For committee notes: <codeph>.\bin\dita -i
+                                    .\plugins\org.oasis-open.pdf\template\committee-note.ditamap -f
+                                        <b>oasis-pdf-committeeNote</b></codeph><draft-comment
+                                    author="stanl">
+                                    <p>Cannot verify.</p>
+                                </draft-comment></p>
+                            <p>For specs: <codeph>.\bin\dita -i
+                                    .\plugins\org.oasis-open.pdf\template\spec.ditamap -f
+                                        <b>oasis-pdf-specification</b></codeph></p>
+                            <p>For generic docs: <codeph>.\bin\dita -i
+                                    .\plugins\org.oasis-open.pdf\template\committee-note.ditamap -f
+                                        <b>oasis-pdf-generic</b></codeph></p>
+                            <p>If DITA-OT returns an error message similar to the following, update
+                                the <codeph>axf.path</codeph> and/or <codeph>axf.cmd</codeph>
+                                DITA-OT properties to point to your local Antenna House
+                                installation. </p>
+                            <codeblock>.../dita-ot-3.4.0/plugins/org.dita.pdf2/build.xml:148: The following error occurred while executing this line:
+
+...dita-ot-3.4.0/plugins/org.dita.pdf2.axf/build_axf.xml:179: Unable to locate AXF, set property axf.path or axf.cmd</codeblock>
+                        </chdesc>
+                    </chrow>
+                    <chrow>
+                        <choption>
+                            <p>If you <i>do not</i> have a version of Antenna House PDF Formatter
+                                installed</p>
+                        </choption>
+                        <chdesc>
+                            <p>For pre-production committee notes: <codeph>.\bin\dita -i
+                                    .\plugins\org.oasis-open.pdf\template\committee-note.ditamap -f
+                                        <b>oasis-pdf-committeeNote</b>
+                                    <b>-Dpdf.formatter=fop</b></codeph><draft-comment author="stanl">
+                                    <p>Fatal build error: [PDFX013F][FATAL] </p>
+                                </draft-comment></p>
+                            <p>For pre-production specs: <codeph>.\bin\dita -i
+                                    .\plugins\org.oasis-open.pdf\template\spec.ditamap -f
+                                        <b>oasis-pdf-specification</b>
+                                    <b>-Dpdf.formatter=fop</b></codeph><draft-comment author="stanl">
+                                    <p>Fatal build error: [PDFX013F][FATAL] </p>
+                                </draft-comment></p>
+                            <p>For generic docs:<codeph>.\bin\dita -i
+                                    .\plugins\org.oasis-open.pdf\template\committee-note.ditamap -f
+                                        <b>oasis-pdf-generic</b>
+                                    <b>-Dpdf.formatter=fop</b></codeph>
+                                <draft-comment author="stanl">
+                                    <p>Built fine with
+                                        <filepath>committee-note.ditamap</filepath>.</p>
+                                </draft-comment></p>
+                            <p>The <codeph>-Dpdf.formatter=fop</codeph> command line option
+                                instructs the DITA-OT to use the default DITA-OT
+                                    <cmdname>fop</cmdname> PDF processor instead of the Antenna
+                                House PDF Formatter.</p>
+                        </chdesc>
+                    </chrow>
+                </choicetable>
+                <stepresult>
+                    <p>DITA-OT generates a PDF for each of these OASIS transtypes with OASIS
+                        branding and TC components.</p>
+                    <image placement="break" href="images/fop_committee-note_03.png"
+                        id="image_gzx_nqr_hkb">
+                        <alt>Sample output</alt>
+                    </image>
+                </stepresult>
+            </step>
+        </steps>
+        <postreq id="postreq_g4m_pwl_fkb">
+            <p>Once you have confirmed that the OASIS DITA TC stylesheets have been installed and
+                work with sample data, review best practices for structuring your own OASIS DITA
+                maps and topics.  </p>
+        </postreq>
+    </taskbody>
+    <related-links>
+        <link href="atc_best-practices-tc-stylesheets.dita"/>
+    </related-links>
+</task>

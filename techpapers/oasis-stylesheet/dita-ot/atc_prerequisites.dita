@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_avv_42r_hkb">
+    <title>Prerequisites</title>
+    <shortdesc><ph conref="lib_atc_stylesheets.dita#topic_zns_khr_hkb/ph_shortdesc_prerequisites"
+        /></shortdesc>
+    <refbody>
+        <section id="section_nkr_ljr_hkb">
+            <p>To make effective use of the <ph keyref="stylesheet-collection-name"/>, you need to
+                consider the following prerequisites. </p>
+            <note>
+                <p>OASIS DITA Adoption TC white papers have no system or software requirements
+                    beyond those required by the <ph keyref="stylesheet-collection-name"/>. Review
+                    the GitHub home page for the <ph keyref="stylesheet-collection-name"/> at <ph
+                        keyref="stylesheet-collection-url"/> for updated prerequisites.</p>
+            </note>
+        </section>
+        <section id="section_ikk_pjr_hkb">
+            <title>System requirements</title>
+            <p>To use the <ph keyref="stylesheet-collection-name"/>, your system needs to support
+                the following.</p>
+            <ul id="ul_hjn_vkr_hkb">
+                <li>
+                    <p><i>Liberation Sans font</i>: Install the open-source Liberation Sans font for
+                        official OASIS publications generated from the <ph
+                            keyref="stylesheet-collection-name"/>.  </p>
+                    <p>For information about installing the Adobe Liberation Sans font see <xref
+                            href="https://fonts.adobe.com/fonts/liberation-sans#about-section"
+                            format="html" scope="external">Liberation Sans</xref>. </p>
+                </li>
+            </ul>
+        </section>
+        <section id="section_z3r_skr_hkb">
+            <title>Software requirements</title>
+            <p>Before installing and configuring the <ph keyref="stylesheet-collection-name"/>, you
+                need to install the following layered software.</p>
+            <ul id="ul_osq_slr_hkb">
+                <li><i>Java SDK/JDK</i>: If you have never installed the DITA Open Toolkit, you may
+                    need to install some version of the Java SDK/JDK. See <xref
+                        href="https://www.dita-ot.org/dev/topics/prerequisite-software.html"
+                        format="html" scope="external">Prerequisite software</xref> for the DITA
+                    Open Toolkit for installation instructions. </li>
+                <li><i>DITA Open Toolkit</i>: The <ph keyref="stylesheet-collection-name"/> are
+                    distributed as plug-ins for the DITA Open Toolkit version <ph
+                        keyref="stylesheet-dita-ot-version"/> or higher. See <xref
+                        href="https://www.dita-ot.org/dev/topics/installing-client.html"
+                        format="html" scope="external">Installing DITA Open Toolkit</xref> for
+                    instructions about installing DITA-OT on your Windows, MacOS, or Linux system.    </li>
+                <li>
+                    <p><i><xref href="https://www.antennahouse.com/" format="html" scope="external"
+                                >Antenna House</xref> PDF Formatter</i>: The
+                            <codeph>oasis-pdf-committeeNote</codeph> and
+                            <codeph>oasis-pdf-specification</codeph> transformation types require
+                        that Antenna House be installed on your system. The
+                            <codeph>oasis-pdf-generic</codeph> transformation type does not. </p>
+                    <ul id="ul_kpy_mml_fkb">
+                        <li>
+                            <p>If you have some version of the Antenna House PDF Formatter installed
+                                on your system, you may need to update the <codeph>axf.path</codeph>
+                                and/or <codeph>axf.cmd</codeph> DITA-OT properties defining the
+                                local filepath and local executable name of the PDF Formatter. </p>
+                        </li>
+                        <li>
+                            <p>If you do not have a version of the Antenna House PDF Formatter
+                                installed on your system, you can still generate pre-production PDF
+                                output using the DITA-OT default processor (<codeph>fop</codeph>) by
+                                updating the OASIS PDF stylesheet properties or by specifying the
+                                    <codeph>fop</codeph> processor on the <cmdname>dita</cmdname>
+                                command line (<codeph>-Dpdf.formatter=fop</codeph>). </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </refbody>
+</reference>

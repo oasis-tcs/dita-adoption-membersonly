@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_qz3_5dr_hkb">
+    <title><ph keyref="review-status"/>  Publishing OASIS DITA Adoption white papers using the <ph
+            keyref="stylesheet-collection-name"/></title>
+    <body>
+        <note type="important">
+            <p>As of this writing (<ph keyref="current-date"/>), this document is in a draft state
+                and has not been reviewed by the stylesheet developers (the OASIS DITA TC) or by
+                consumers (the OASIS DITA Adoption TC). DO NOT USE yet to develop Adoption TC white
+                papers. </p>
+        </note>
+        <p>This document explains how to install and use <ph keyref="stylesheet-collection-name"/>
+            to publish OASIS DITA Adoption TC white papers.</p>
+        <section id="section_rrr_dhr_hkb">
+            <title>Reading path</title>
+            <simpletable frame="all" relcolwidth="1.0* 1.67*" id="simpletable_vdv_fhr_hkb">
+                <sthead>
+                    <stentry>
+                        <p>Section</p>
+                    </stentry>
+                    <stentry>
+                        <p>Description</p>
+                    </stentry>
+                </sthead>
+                <strow>
+                    <stentry>
+                        <p><xref href="atc_prerequisites.dita"/></p>
+                    </stentry>
+                    <stentry>
+                        <p><ph
+                                conref="lib_atc_stylesheets.dita#topic_zns_khr_hkb/ph_shortdesc_prerequisites"
+                            /></p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <p><xref href="atc_install-tc-stylesheets.dita"/></p>
+                    </stentry>
+                    <stentry>
+                        <p><ph
+                                conref="lib_atc_stylesheets.dita#topic_zns_khr_hkb/ph_shortdesc_installation"
+                            /></p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <p><xref href="atc_best-practices-tc-stylesheets.dita"/></p>
+                    </stentry>
+                    <stentry>
+                        <p><ph
+                                conref="lib_atc_stylesheets.dita#topic_zns_khr_hkb/ph_shortdesc_best-practices"
+                            /></p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <p><xref href="atc_samples.dita"/></p>
+                    </stentry>
+                    <stentry>
+                        <p><ph
+                                conref="lib_atc_stylesheets.dita#topic_zns_khr_hkb/ph_shortdesc_samples"
+                            /></p>
+                    </stentry>
+                </strow>
+            </simpletable>
+            <p/>
+        </section>
+    </body>
+</topic>

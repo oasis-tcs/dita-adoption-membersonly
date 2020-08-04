@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_h41_xvl_fkb">
+    <title>Best practices for authoring DITA Adoption white papers</title>
+    <shortdesc><ph conref="lib_atc_stylesheets.dita#topic_zns_khr_hkb/ph_shortdesc_best-practices"
+        /></shortdesc>
+    <refbody>
+        <section id="section_nbw_dwl_fkb">
+            <title>Overview </title>
+            <p>TBD</p>
+        </section>
+        <section id="section_rkq_2wl_fkb">
+            <title>Best practices - white paper maps</title>
+            <p>TBD</p>
+        </section>
+        <section id="section_xvb_gwl_fkb">
+            <title>Best practices - white paper topics </title>
+            <p>TBD</p>
+        </section>
+    </refbody>
+</reference>
